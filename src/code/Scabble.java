@@ -25,7 +25,7 @@ public class Scabble {
 		p1.printRack();
 		p2.printRack();
 		
-		
+		// hi
 	}
 	
 }
