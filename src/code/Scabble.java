@@ -12,11 +12,11 @@ public class Scabble {
 		Rack p1 = new Rack("Player 1");
 		Rack p2 = new Rack("Player 2");
 		
-		board.addPiece(1, 4, 'c');
-		board.addPiece(2, 4, 'a');
-		board.addPiece(3, 4, 't');
-		board.addPiece(3, 5, 'a');
-		board.addPiece(3, 6, 'g');
+		board.addPiece(1, 4, new Tile('c', 2));
+		board.addPiece(2, 4, new Tile('a', 2));
+		board.addPiece(3, 4, new Tile('t', 2));
+		board.addPiece(3, 5, new Tile('a', 2));
+		board.addPiece(3, 6, new Tile('g', 2));
 		board.printBoard();
 		
 		p1.addPiece(1, new Tile('d', 2));
