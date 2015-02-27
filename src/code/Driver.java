@@ -1,6 +1,6 @@
 package code;
 
-import code.Board;
+//import code.Board;
 import code.Scabble;
 
 public class Driver {

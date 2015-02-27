@@ -19,11 +19,15 @@ public class Scabble {
 		board.addPiece(3, 6, 'g');
 		board.printBoard();
 		
-		p1.addPiece(1, 'z');
-		p2.addPiece(5, 'x');
+		p1.addPiece(1, new Tile('d', 2));
+		p2.addPiece(5, new Tile('c', 4));
 		
 		p1.printRack();
 		p2.printRack();
+		
+		//Tile t = new Tile('c', 1);
+	//	System.out.print(t.getType);
+		
 		
 		// hi
 	}

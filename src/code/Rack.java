@@ -1,8 +1,10 @@
 package code;
 
+import code.Tile;
+
 public class Rack {
 	
-	int[] _rack = new int[12];
+	Object[] _rack = new Object[12];
 	String _player = "x";
 	
 	public Rack(String player){
@@ -13,13 +15,17 @@ public class Rack {
 	public void printRack(){
 		
 		System.out.print(_player +": [ ");
-		for (int r = 0; r <= 11; r++){
-			System.out.print((char)_rack[r]+" |");
+		for (int r = 0; r <= 11; r++){ 
+				if(_rack[r] != null)
+			System.out.print(((Tile) _rack[r]).getType()+" |");
+				else
+			System.out.print("  |");
+			
 		}
 		System.out.println(" ]");
 	}
 	
-	public void addPiece(int i, char input){
+	public void addPiece(int i, Tile input){
 		_rack[i-1] = input;
 		
 	}

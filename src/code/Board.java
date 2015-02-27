@@ -3,7 +3,7 @@ package code;
 public class Board {
 	
 	
-	int [][] _board = new int [20][20];
+	char [][] _board = new char [20][20];
 	
 	
 	public void printBoard(){
@@ -11,7 +11,7 @@ public class Board {
 		for( int r = 0; r<=19; r++){
 			System.out.print("[ ");
 			for(int c = 0; c<=19; c++){				
-				System.out.print((char)_board[r][c]+" ,");	
+				System.out.print(_board[r][c]+" ,");	
 			}
 			System.out.println("]");
 			
