@@ -2,14 +2,12 @@ package tests;
 
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
-
+//import java.util.ArrayList;
 import org.junit.Test;
-
 import code.TileBag;
-import code.*;
+import code.Tile;
 
-public class TilebagTests<Tile> {
+public class TilebagTests {
 	
 	@Test public void test01() { letterstest('A', 29); }
 	@Test public void test02(){valuetest(5, 240);}
@@ -33,11 +31,11 @@ public class TilebagTests<Tile> {
 	
 	public void letterstest(char c, int in){
 		int counter = 0;
-		TileBag  tb= new TileBag();
+		TileBag  tb = new TileBag();
 		int expected = in;
 		for(int i= 0; i<tb.size();i++){
-			Tile t = (Tile) tb.checkTile();
-			if( ((code.Tile) t).getType() == c){
+			Tile t = tb.checkTile();
+			if(t.getType() == c){
 		        counter= counter+1;
 				}
 		}
@@ -51,8 +49,8 @@ public class TilebagTests<Tile> {
 		TileBag  tb= new TileBag();
 		int expected = in;
 		for(int i= 0; i<tb.size();i++){
-			Tile t = (Tile) tb.checkTile();
-			if( ((code.Tile) t).getValue() == v){
+			Tile t = tb.checkTile();
+			if( t.getValue() == v){
 		        counter= counter+1;
 				}
 		}
