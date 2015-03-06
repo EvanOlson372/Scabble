@@ -33,8 +33,8 @@ public class Board {
 		return _board;
 	}
 	
-	public Tile getPiece(int x, int y){
-		Tile t = _board[x][y];
+	public Tile getPiece(int r, int c){
+		Tile t = _board[r-1][c-1];
 		return t;
 		
 	}
