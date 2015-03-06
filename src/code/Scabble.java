@@ -24,7 +24,7 @@ public class Scabble {
 		tb.printBag();
 		
 		
-/*		
+		
 		p1.addPiece(1, tb.getTile());
 		p1.printRack();
 		p1.addPiece(2, tb.getTile());
@@ -35,7 +35,7 @@ public class Scabble {
 		board.printBoard();
 		
 		p1.printRack();
-*/
+
 
 	}
 }

@@ -29,7 +29,9 @@ public class Board {
 		
 		
 	}
-
+	public Tile [][] getBoard(){
+		return _board;
+	}
 
 }
 
