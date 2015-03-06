@@ -2,7 +2,7 @@ package tests;
 
 import static org.junit.Assert.*;
 
-//import java.util.ArrayList;
+
 import org.junit.Test;
 import code.TileBag;
 import code.Tile;
@@ -34,9 +34,9 @@ public class TilebagTests {
 		TileBag  tb = new TileBag();
 		int expected = in;
 		for(int i= 0; i<tb.size();i++){
-			Tile t = tb.checkTile();
+			Tile t = tb.checkTile(i);
 			if(t.getType() == c){
-		        counter= counter+1;
+		        counter++;
 				}
 		}
 		int actual = counter;
@@ -49,7 +49,7 @@ public class TilebagTests {
 		TileBag  tb= new TileBag();
 		int expected = in;
 		for(int i= 0; i<tb.size();i++){
-			Tile t = tb.checkTile();
+			Tile t = tb.checkTile(i);
 			if( t.getValue() == v){
 		        counter= counter+1;
 				}
