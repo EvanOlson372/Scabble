@@ -32,6 +32,12 @@ public class Board {
 	public Tile [][] getBoard(){
 		return _board;
 	}
+	
+	public Tile getPiece(int x, int y){
+		Tile t = _board[x][y];
+		return t;
+		
+	}
 
 }
 
