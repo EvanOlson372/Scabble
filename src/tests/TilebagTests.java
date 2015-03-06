@@ -12,6 +12,10 @@ import code.*;
 public class TilebagTests<Tile> {
 	
 	@Test public void test01() { letterstest('A', 29); }
+	@Test public void test02(){valuetest(5, 240);}
+	@Test public void test02(){valuetest(2, 15);}
+	@Test public void test02(){valuetest(1, 145);}
+	
 	
 	
 	
@@ -37,7 +41,22 @@ public class TilebagTests<Tile> {
 		        counter ++;
 				}
 		}
-		int actual = in;
+		int actual = counter;
+		assertTrue("I expected "+expected+", but I got "+actual, actual==expected);
+
+	}
+	
+	public void valuetest(int v, int in){
+		int counter = 0;
+		TileBag  tb= new TileBag();
+		int expected = in;
+		for(int i= 0; i<tb.size();i++){
+			Tile t = (Tile) tb.getTile();
+			if( ((code.Tile) t).getValue() == v){
+		        counter ++;
+				}
+		}
+		int actual = counter;
 		assertTrue("I expected "+expected+", but I got "+actual, actual==expected);
 
 	}
