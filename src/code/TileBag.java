@@ -72,7 +72,9 @@ public class TileBag {
 		return _tileBag;
 	}
 	
-		
+	public int size(){
+		return _tileBag.size();
+	}
 	
 	
 	
