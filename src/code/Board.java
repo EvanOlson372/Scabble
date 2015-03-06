@@ -3,7 +3,7 @@ package code;
 public class Board {
 	
 	
-	Object [][] _board = new Object [20][20];
+	Tile [][] _board = new Tile [20][20];
 	
 	
 	public void printBoard(){
@@ -12,7 +12,7 @@ public class Board {
 			System.out.print("[ ");
 			for(int c = 0; c<=19; c++){	
 				if(_board[r][c] != null)
-				System.out.print(((Tile) _board[r][c]).getType()+" ,");	
+				System.out.print(_board[r][c].getType()+" ,");	
 				else
 				System.out.print(" ,");
 			}

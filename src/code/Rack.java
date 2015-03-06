@@ -4,7 +4,7 @@ import code.Tile;
 
 public class Rack {
 	
-	Object[] _rack = new Object[12];
+	Tile[] _rack = new Tile[12];
 	String _player = "x";
 	int _score = 0;
 	
@@ -18,7 +18,7 @@ public class Rack {
 		System.out.print(_player +": [ ");
 		for (int r = 0; r <= 11; r++){ 
 				if(_rack[r] != null)
-			System.out.print(((Tile) _rack[r]).getType()+" |");
+			System.out.print( _rack[r].getType()+" |");
 				else
 			System.out.print("  |");
 			
@@ -32,7 +32,7 @@ public class Rack {
 	}
 	
 	public Tile getPiece(int index){
-		Tile t = (Tile) _rack[index-1];
+		Tile t = _rack[index-1];
 		_rack[index - 1] = null;
 		return t;
 	
