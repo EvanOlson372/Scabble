@@ -45,6 +45,10 @@ public class TileBag {
 		Tile t = _tileBag.remove(0);
 		return t;
 	}
+	public Tile checkTile(){
+		Tile t = _tileBag.get(0);
+		return t;
+	}
 	
 	public void printBag(){
 		
