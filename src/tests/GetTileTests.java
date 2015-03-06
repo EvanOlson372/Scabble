@@ -18,12 +18,12 @@ public class GetTileTests {
 		TileBag tb = new TileBag();
 		Tile t= tb.getTile();
 		for(int i= 0; i<tb.size(); i++){
-			Tile t1 = tb.getTile();
-			if (t == t1){
-				counter++;
+			if(tb.size()==399){
+				_tr= true;
 			}
-			if (counter == (29-1)|| counter == (15-1)||counter == (12-1)){
-				_tr =true;
+
+			else{
+				_tr = false;
 			}
 		}
 		Boolean actual =_tr;
