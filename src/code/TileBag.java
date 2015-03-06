@@ -68,6 +68,10 @@ public class TileBag {
 		
 	}
 	
+	public ArrayList<Tile> getBag(){
+		return _tileBag;
+	}
+	
 		
 	
 	
