@@ -23,6 +23,8 @@ public class Scabble {
 		
 		tb.printBag();
 		
+		System.out.print("\n"+tb.checkTile()+ "\n");
+		
 		
 		
 		p1.addPiece(1, tb.getTile());
